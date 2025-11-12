@@ -16,7 +16,7 @@ match priority:
     case _:
         message = f"'{task}' has an unknown priority level"
         
- #checking if task is time bound       
+ #checking if task is time_bound     
 if time_bound == "yes":
          message += " that requires immediate attention today!"
 else:
