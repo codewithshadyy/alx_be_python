@@ -1,4 +1,3 @@
-
 def display_menu():
     print("Shopping List Manager")
     print("1. Add Item")
@@ -10,30 +9,32 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        choice =  int(input("Enter your choice: "))
+        choice = int(input("Enter your choice: "))
 
         if choice == 1:
-            item = input("Add an item:").lower()
+            item = input("Enter the item to add: ").lower()
             shopping_list.append(item)
-            
+
         elif choice == 2:
-            item = input("Remove an item:").lower()
+            item = input("Enter the item to remove: ").lower()
             if item in shopping_list:
                 shopping_list.remove(item)
                 print(f"{item} has been deleted")
             else:
                 print(f"{item} is not on the shopping list")
+
         elif choice == 3:
             if len(shopping_list) == 0:
                 print("Your shoppig list is empty")
             else:
                 print("=== current shopping list ===")
                 for item in shopping_list:
-                    print(item)    
-            
+                    print(item)
+
         elif choice == 4:
             print("Goodbye!")
             break
+
         else:
             print("Invalid choice. Please try again.")
 
