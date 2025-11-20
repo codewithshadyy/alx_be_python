@@ -9,7 +9,7 @@ def display_current_datetime():
      hour = current_date.strftime("%H")
      minutes= current_date.strftime("%M")
      Seconds= current_date.strftime("%S")
-     print(f"Current date and time:{year}:{month}:{date} {hour}:{minutes}:{Seconds}")
+     print(f"Current date and time:{year}-{month}-{date} {hour}:{minutes}:{Seconds}")
  
 display_current_datetime()     
 
