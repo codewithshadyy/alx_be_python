@@ -3,13 +3,7 @@ from datetime import datetime , timedelta
 def display_current_datetime():
     
      current_date  = datetime.now()
-     year = current_date.strftime("%Y")
-     month= current_date.strftime("%m")
-     date= current_date.strftime("%d")
-     hour = current_date.strftime("%H")
-     minutes= current_date.strftime("%M")
-     Seconds= current_date.strftime("%S")
-     print(f"Current date and time:{year}-{month}-{date} {hour}:{minutes}:{Seconds}")
+     print("Current date and time:", current_date.strftime("%Y-%m-%d  %H:%M:%S"))
  
 display_current_datetime()     
 
