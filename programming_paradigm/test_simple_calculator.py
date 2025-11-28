@@ -8,7 +8,6 @@ class TestSimpleCalculator(unittest.TestCase):
         """Set up the calculator before each test."""
         self.calc = SimpleCalculator()
 
- 
     def test_addition(self):
         self.assertEqual(self.calc.add(2, 3), 5)
         self.assertEqual(self.calc.add(-1, 1), 0)
@@ -22,7 +21,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.subtract(-3, -3), 0)
         self.assertEqual(self.calc.subtract(5.5, 2.5), 3.0)
 
-  
+ 
     def test_multiplication(self):
         self.assertEqual(self.calc.multiply(2, 3), 6)
         self.assertEqual(self.calc.multiply(-2, 3), -6)
@@ -30,8 +29,9 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(2.5, 2), 5.0)
         self.assertEqual(self.calc.multiply(0, 10), 0)
 
-   
-    def test_divide(self):
+ 
+    def test_division(self):
+      
         self.assertEqual(self.calc.divide(6, 3), 2)
         self.assertAlmostEqual(self.calc.divide(7, 2), 3.5)
         self.assertEqual(self.calc.divide(-6, 3), -2)
