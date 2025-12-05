@@ -30,9 +30,7 @@ class Library:
         self.books = []
 
     def add_book(self, book):
-        # Optionally: validate instance type:
-        # if not isinstance(book, Book):
-        #     raise TypeError("Only Book (or subclasses) can be added")
+   
         self.books.append(book)
 
     def list_books(self):
